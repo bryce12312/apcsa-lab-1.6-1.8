@@ -31,6 +31,7 @@ public class ToolkitLab
     public static int addBonus(int score, int bonus)
     {
         // TODO Part 1: use += to add bonus to score, then return score
+        score +=bonus;
         return score;
     }
 
@@ -50,6 +51,7 @@ public class ToolkitLab
     public static int splitEvenly(int total, int people)
     {
         // TODO Part 2a: use /= to divide total by people, then return total
+        total /= people;
         return total;
     }
 
@@ -72,6 +74,7 @@ public class ToolkitLab
     public static double splitExactly(double total, int people)
     {
         // TODO Part 2b: use /= to divide total by people, then return total
+        total /= people;
         return total;
     }
 
@@ -93,6 +96,7 @@ public class ToolkitLab
     public static int leftoverItems(int items, int groupSize)
     {
         // TODO Part 3: use %= to store the remainder in items, then return it
+        items %= groupSize;
         return items;
     }
 
@@ -119,6 +123,7 @@ public class ToolkitLab
     public static int nextTicket(int counter)
     {
         // TODO Part 4: add 1 to counter with ++ on its own line, then return it
+        counter++;
         return counter;
     }
 
@@ -154,7 +159,8 @@ public class ToolkitLab
     public static double circleArea(double radius)
     {
         // TODO Part 5: return Math.PI times the radius squared
-        return 0.0;
+     
+        return Math.PI * Math.pow(radius,2);
     }
 
     // ---------------------------------------------------------------
@@ -187,7 +193,8 @@ public class ToolkitLab
     public static double averageScore(int totalPoints, int tests)
     {
         // TODO Part 6: return the exact average, keeping the decimal part
-        return 0.0;
+        
+        return ((double)totalPoints / tests);
     }
 
     // ---------------------------------------------------------------
@@ -212,13 +219,11 @@ public class ToolkitLab
     // ---------------------------------------------------------------
     public static int finalScore(int score)
     {
-        /* These two lines are inside a comment, so they never execute:
-        score += 5;
-        score *= 2;
-        */
 
         // TODO Part 7: write those two statements again here, outside the
         // comment, then return score
+        score += 5;
+        score *= 2;
         return score;
     }
 
